@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +9,14 @@
 
     <!--My Css-->
     <link rel="stylesheet" href="style.css">
-    
+
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
 </head>
+
 <body>
     <!-- Sidebar -->
     <div class="hamburger" id="hamburger">
@@ -33,10 +34,14 @@
             <h2 class="brand-name">My-Task</h2>
         </div>
         <nav class="menu">
-            <a href="Index.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-home"></i> <span>Dashboard</span></a>
-            <a href="Project.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-briefcase"></i> <span>Projects</span></a>
-            <a href="Ourclients.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-users"></i> <span>Our Clients</span></a>
-            <a href="#" class="menu-item" onclick="toggleMenu()"><i class="fas fa-ticket-alt"></i> <span>Tickets</span></a>
+            <a href="Index.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-home"></i>
+                <span>Dashboard</span></a>
+            <a href="Project.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-briefcase"></i>
+                <span>Projects</span></a>
+            <a href="Ourclients.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-users"></i> <span>Our
+                    Clients</span></a>
+            <a href="#" class="menu-item" onclick="toggleMenu()"><i class="fas fa-ticket-alt"></i>
+                <span>Tickets</span></a>
             <a href="#" class="menu-item has-submenu">
                 <i class="fas fa-user"></i> <span>Employees</span>
                 <i class="fas fa-chevron-down submenu-icon"></i>
@@ -50,13 +55,15 @@
                 <a href="salary.html" class="submenu-item" onclick="toggleMenu()">Salary</a>
             </div>
             <a href="#" class="menu-item" onclick="toggleMenu()"><i class="fas fa-book"></i> <span>Accounts</span></a>
-            <a href="#" class="menu-item" onclick="toggleMenu()"><i class="fas fa-dollar-sign"></i> <span>Payroll</span></a>
+            <a href="#" class="menu-item" onclick="toggleMenu()"><i class="fas fa-dollar-sign"></i>
+                <span>Payroll</span></a>
         </nav>
         <div class="bottom-icon">
             <i class="fas fa-ellipsis-h"></i>
         </div>
     </div>
-<!-- Main Content -->
+
+    <!-- Main Content -->
     <div class="main-content">
         <div class="container">
             <header class="header">
@@ -64,11 +71,13 @@
                     <i class="fas fa-search search-icon"></i>
                     <input type="text" placeholder="Search">
                 </div>
-               
+
                 <div class="user-actions">
                     <i class="fas fa-bell"></i>
-                    <i class="fas fa-user-circle"></i>
-                </div>  
+
+                    <div class="profile-icon">
+                        <img src="images/profile_img.png" alt="">
+                    </div>
                 </div>
             </header>
 
@@ -81,14 +90,146 @@
 
             <div class="employee-grid">
                 <div class="employee-card">
-                    <div class="employee-header">
+                    <div class="employee-header" style="background-color: rgb(242, 242, 153);">
                         <img src="images/performer-1.jpg" alt="Luke Short" class="employee-avatar">
-                        <div>
-                            <div class="employee-name">Luke Short</div>
-                            <span class="employee-role role-designer">UI/UX Designer</span>
+
+                        <div class="emp-details">
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <td> <h5>Name</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Luke Short</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Emp code</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">EMPF1005</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Designation</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">UI/UX Designer</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Department</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Technology</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Joining Date</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">05/05/2023</h5> </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="emp-goals">
+                        <div class="goal">
+                            <h5> Active Goals</h5>
+                            <h5> 7 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Progress </h5>
+                            <h5> 60% </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Completed Task </h5>
+                            <h5> 12 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Due Task </h5>
+                            <h5> 4 </h5>
                         </div>
                     </div>
-                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
+
+                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
+
+                    <div class="employee-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-tasks stat-icon"></i>
+                            <div class="stat-value">25</div>
+                            <div class="stat-label">Tasks</div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-star stat-icon"></i>
+                            <div class="stat-value">4.9</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-project-diagram stat-icon"></i>
+                            <div class="stat-value">32</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                    </div>
+
+                    <div class="employee-actions">
+                        <a href="profile.html"> <button style="background-color: #6f42c1;"> Profile </button></a>
+                        <a href="#"> <button style="color: #6f42c1; border: 2px solid #6f42c1;"> Add Task </button> </a>
+                    </div>
+
+                </div>
+
+                <div class="employee-card">
+                    <div class="employee-header" style="background-color: rgb(192, 255, 193);">
+                        <img src="images/performer-2.jpg" alt="Luke Short" class="employee-avatar">
+
+                        <div class="emp-details">
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <td> <h5>Name</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Lillian Powell</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Emp code</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">EMPF1005</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Designation</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Quality Assurance</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Department</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Service</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Joining Date</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">21/03/2022</h5> </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="emp-goals">
+                        <div class="goal">
+                            <h5> Active Goals</h5>
+                            <h5> 5 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Progress </h5>
+                            <h5> 75% </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Completed Task </h5>
+                            <h5> 8 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Due Task </h5>
+                            <h5> 2 </h5>
+                        </div>
+                    </div>
+
+                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
+
                     <div class="employee-stats">
                         <div class="stat-item">
                             <i class="fas fa-tasks stat-icon"></i>
@@ -106,278 +247,570 @@
                             <div class="stat-label">Projects</div>
                         </div>
                     </div>
+
                     <div class="employee-actions">
-                      <a href="profile.html"><button class="btn btn-primary">Profile</button></a>  
-                       <a href="#" ><button class="btn btn-secondary">Add Task </button></a>
+                        <a href="profile.html"> <button style="background-color: #6f42c1;"> Profile </button></a>
+                        <a href="#"> <button style="color: #6f42c1; border: 2px solid #6f42c1;"> Add Task </button> </a>
                     </div>
+
                 </div>
 
                 <div class="employee-card">
-                    <div class="employee-header">
-                        <img src="images/performer-2.jpg" alt="Lillian Powell" class="employee-avatar">
-                        <div>
-                            <div class="employee-name">Lillian Powell</div>
-                            <span class="employee-role role-qa">Quality Assurance</span>
+                    <div class="employee-header" style="background-color: rgb(242, 205, 153);">
+                        <img src="images/performer-3.jpg" alt="Luke Short" class="employee-avatar">
+
+                        <div class="emp-details">
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <td> <h5>Name</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Rachel parsons</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Emp code</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">EMPE2005</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Designation</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Website Designer</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Department</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Application Developer</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Joining Date</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">10/03/2022</h5> </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="emp-goals">
+                        <div class="goal">
+                            <h5> Active Goals</h5>
+                            <h5> 7 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Progress </h5>
+                            <h5> 60% </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Completed Task </h5>
+                            <h5> 15 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Due Task </h5>
+                            <h5> 5 </h5>
                         </div>
                     </div>
-                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
+
+                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
+
                     <div class="employee-stats">
                         <div class="stat-item">
                             <i class="fas fa-tasks stat-icon"></i>
-                            <div class="stat-value">00</div>
+                            <div class="stat-value">21</div>
                             <div class="stat-label">Tasks</div>
                         </div>
-                
-            <div class="stat-item">
+                        <div class="stat-item">
                             <i class="fas fa-star stat-icon"></i>
-                            <div class="stat-value">00</div>
+                            <div class="stat-value">5.0</div>
                             <div class="stat-label">Rating</div>
                         </div>
                         <div class="stat-item">
                             <i class="fas fa-project-diagram stat-icon"></i>
-                            <div class="stat-value">00</div>
+                            <div class="stat-value">42</div>
                             <div class="stat-label">Projects</div>
                         </div>
                     </div>
+
                     <div class="employee-actions">
-                        
-                        <a href="profile.html"><button class="btn btn-primary">Profile</button></a>  
-                        <a href="#" ><button class="btn btn-secondary">Add Task </button></a>
+                        <a href="profile.html"> <button style="background-color: #6f42c1;"> Profile </button></a>
+                        <a href="#"> <button style="color: #6f42c1; border: 2px solid #6f42c1;"> Add Task </button> </a>
                     </div>
+
                 </div>
 
                 <div class="employee-card">
-                    <div class="employee-header">
-                        <img src="images/performer-3.jpg" alt="Rachel Parsons" class="employee-avatar">
-                        <div>
-                            <div class="employee-name">Rachel Parsons</div>
-                            <span class="employee-role role-designer">Website Designer</span>
+                    <div class="employee-header" style="background-color: rgb(153, 242, 221);">
+                        <img src="images/performer-1.jpg" alt="Luke Short" class="employee-avatar">
+
+                        <div class="emp-details">
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <td> <h5>Name</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Gabriel</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Emp code</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">EMPF1009</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Designation</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Developer</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Department</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Technology</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Joining Date</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">21/11/2022</h5> </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="emp-goals">
+                        <div class="goal">
+                            <h5> Active Goals</h5>
+                            <h5> 9 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Progress </h5>
+                            <h5> 72% </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Completed Task </h5>
+                            <h5> 16 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Due Task </h5>
+                            <h5> 3 </h5>
                         </div>
                     </div>
-                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
+
+                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
+
                     <div class="employee-stats">
                         <div class="stat-item">
                             <i class="fas fa-tasks stat-icon"></i>
-                            <div class="stat-value">10</div>
+                            <div class="stat-value">32</div>
                             <div class="stat-label">Tasks</div>
                         </div>
                         <div class="stat-item">
                             <i class="fas fa-star stat-icon"></i>
+                            <div class="stat-value">5.2</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-project-diagram stat-icon"></i>
+                            <div class="stat-value">45</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                    </div>
+
+                    <div class="employee-actions">
+                        <a href="profile.html"> <button style="background-color: #6f42c1;"> Profile </button></a>
+                        <a href="#"> <button style="color: #6f42c1; border: 2px solid #6f42c1;"> Add Task </button> </a>
+                    </div>
+
+                </div>
+
+                <div class="employee-card">
+                    <div class="employee-header" style="background-color: rgb(249, 197, 236);">
+                        <img src="images/performer-3.jpg" alt="Luke Short" class="employee-avatar">
+
+                        <div class="emp-details">
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <td> <h5>Name</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Luke Short</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Emp code</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">EMPF1025</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Designation</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Website Designer</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Department</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Technology</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Joining Date</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">19/07/2022</h5> </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="emp-goals">
+                        <div class="goal">
+                            <h5> Active Goals</h5>
+                            <h5> 21 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Progress </h5>
+                            <h5> 82% </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Completed Task </h5>
+                            <h5> 30 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Due Task </h5>
+                            <h5> 6 </h5>
+                        </div>
+                    </div>
+
+                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
+
+                    <div class="employee-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-tasks stat-icon"></i>
+                            <div class="stat-value">47</div>
+                            <div class="stat-label">Tasks</div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-star stat-icon"></i>
+                            <div class="stat-value">4.6</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-project-diagram stat-icon"></i>
+                            <div class="stat-value">51</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                    </div>
+
+                    <div class="employee-actions">
+                        <a href="profile.html"> <button style="background-color: #6f42c1;"> Profile </button></a>
+                        <a href="#"> <button style="color: #6f42c1; border: 2px solid #6f42c1;"> Add Task </button> </a>
+                    </div>
+
+                </div>
+
+                <div class="employee-card">
+                    <div class="employee-header" style="background-color: rgb(227, 249, 175);">
+                        <img src="images/performer-1.jpg" alt="Luke Short" class="employee-avatar">
+
+                        <div class="emp-details">
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <td> <h5>Name</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">John Hardacre</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Emp code</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">EMPE1051</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Designation</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">UI/UX Designer</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Department</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Technology</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Joining Date</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">22/03/2023</h5> </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="emp-goals">
+                        <div class="goal">
+                            <h5> Active Goals</h5>
+                            <h5> 5 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Progress </h5>
+                            <h5> 75% </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Completed Task </h5>
+                            <h5> 8 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Due Task </h5>
+                            <h5> 2 </h5>
+                        </div>
+                    </div>
+
+                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
+
+                    <div class="employee-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-tasks stat-icon"></i>
                             <div class="stat-value">04</div>
-                            <div class="stat-label">Rating</div>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-project-diagram stat-icon"></i>
-                            <div class="stat-value">15</div>
-                            <div class="stat-label">Projects</div>
-                        </div>
-                    </div>
-                    <div class="employee-actions">
-                        <a href="profile.html"><button class="btn btn-primary">Profile</button></a>  
-                        <a href="#" ><button class="btn btn-secondary">Add Task </button></a>
-                    </div>
-                </div>
-
-
-                <div class="employee-card">
-                    <div class="employee-header">
-                        <img src="images/performer-2.jpg" alt="Rachel Parsons" class="employee-avatar">
-                        <div>
-                            <div class="employee-name">Rachel Parsons</div>
-                            <span class="employee-role role-designer">Website Designer</span>
-                        </div>
-                    </div>
-                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
-                    <div class="employee-stats">
-                        <div class="stat-item">
-                            <i class="fas fa-tasks stat-icon"></i>
-                            <div class="stat-value">10</div>
                             <div class="stat-label">Tasks</div>
                         </div>
                         <div class="stat-item">
                             <i class="fas fa-star stat-icon"></i>
+                            <div class="stat-value">4.5</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-project-diagram stat-icon"></i>
                             <div class="stat-value">04</div>
-                            <div class="stat-label">Rating</div>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-project-diagram stat-icon"></i>
-                            <div class="stat-value">15</div>
                             <div class="stat-label">Projects</div>
                         </div>
                     </div>
+
                     <div class="employee-actions">
-                        <a href="profile.html"><button class="btn btn-primary">Profile</button></a>  
-                        <a href="#" ><button class="btn btn-secondary">Add Task </button></a>
+                        <a href="profile.html"> <button style="background-color: #6f42c1;"> Profile </button></a>
+                        <a href="#"> <button style="color: #6f42c1; border: 2px solid #6f42c1;"> Add Task </button> </a>
                     </div>
+
                 </div>
 
-
                 <div class="employee-card">
-                    <div class="employee-header">
-                        <img src="images/performer-3.jpg" alt="Rachel Parsons" class="employee-avatar">
-                        <div>
-                            <div class="employee-name">Rachel Parsons</div>
-                            <span class="employee-role role-designer">Website Designer</span>
+                    <div class="employee-header" style="background-color: rgb(242, 242, 153);">
+                        <img src="images/performer-3.jpg" alt="Luke Short" class="employee-avatar">
+
+                        <div class="emp-details">
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <td> <h5>Name</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Louis</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Emp code</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">EMPF1007</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Designation</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">UI/UX Designer</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Department</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Technology</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Joining Date</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">31/01/2024</h5> </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="emp-goals">
+                        <div class="goal">
+                            <h5> Active Goals</h5>
+                            <h5> 9 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Progress </h5>
+                            <h5> 90% </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Completed Task </h5>
+                            <h5> 26 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Due Task </h5>
+                            <h5> 0 </h5>
                         </div>
                     </div>
-                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
+
+                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
+
                     <div class="employee-stats">
                         <div class="stat-item">
                             <i class="fas fa-tasks stat-icon"></i>
-                            <div class="stat-value">10</div>
+                            <div class="stat-value">32</div>
                             <div class="stat-label">Tasks</div>
                         </div>
                         <div class="stat-item">
                             <i class="fas fa-star stat-icon"></i>
+                            <div class="stat-value">4.7</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-project-diagram stat-icon"></i>
+                            <div class="stat-value">32</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                    </div>
+
+                    <div class="employee-actions">
+                        <a href="profile.html"> <button style="background-color: #6f42c1;"> Profile </button></a>
+                        <a href="#"> <button style="color: #6f42c1; border: 2px solid #6f42c1;"> Add Task </button> </a>
+                    </div>
+
+                </div>
+
+                <div class="employee-card">
+                    <div class="employee-header" style="background-color: rgb(249, 190, 190);">
+                        <img src="images/performer-2.jpg" alt="Luke Short" class="employee-avatar">
+
+                        <div class="emp-details">
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <td> <h5>Name</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Luke Short</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Emp code</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">EMPE1095</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Designation</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">UI/UX Designer</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Department</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">Technology</h5> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h5>Joining Date</h5> </td>
+                                        <td> <h5 style="color: rgb(97, 94, 94);">09/02/2023</h5> </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="emp-goals">
+                        <div class="goal">
+                            <h5> Active Goals</h5>
+                            <h5> 8 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Progress </h5>
+                            <h5> 75% </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Completed Task </h5>
+                            <h5> 8 </h5>
+                        </div>
+
+                        <div class="goal">
+                            <h5> Due Task </h5>
+                            <h5> 2 </h5>
+                        </div>
+                    </div>
+
+                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
+
+                    <div class="employee-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-tasks stat-icon"></i>
                             <div class="stat-value">04</div>
-                            <div class="stat-label">Rating</div>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-project-diagram stat-icon"></i>
-                            <div class="stat-value">15</div>
-                            <div class="stat-label">Projects</div>
-                        </div>
-                    </div>
-                    <div class="employee-actions">
-                        <a href="profile.html"><button class="btn btn-primary">Profile</button></a>  
-                        <a href="#" ><button class="btn btn-secondary">Add Task </button></a>
-                    </div>
-                </div>
-
-                <div class="employee-card">
-                    <div class="employee-header">
-                        <img src="images/performer-1.jpg" alt="Rachel Parsons" class="employee-avatar">
-                        <div>
-                            <div class="employee-name">Rachel Parsons</div>
-                            <span class="employee-role role-designer">Website Designer</span>
-                        </div>
-                    </div>
-                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
-                    <div class="employee-stats">
-                        <div class="stat-item">
-                            <i class="fas fa-tasks stat-icon"></i>
-                            <div class="stat-value">10</div>
                             <div class="stat-label">Tasks</div>
                         </div>
                         <div class="stat-item">
                             <i class="fas fa-star stat-icon"></i>
+                            <div class="stat-value">4.5</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-project-diagram stat-icon"></i>
                             <div class="stat-value">04</div>
-                            <div class="stat-label">Rating</div>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-project-diagram stat-icon"></i>
-                            <div class="stat-value">15</div>
                             <div class="stat-label">Projects</div>
                         </div>
                     </div>
-                    <div class="employee-actions">
-                        <a href="profile.html"><button class="btn btn-primary">Profile</button></a>  
-                        <a href="#" ><button class="btn btn-secondary">Add Task </button></a>
-                    </div>
-                </div>
-                <div class="employee-card">
-                    <div class="employee-header">
-                        <img src="images/performer-3.jpg" alt="Rachel Parsons" class="employee-avatar">
-                        <div>
-                            <div class="employee-name">Rachel Parsons</div>
-                            <span class="employee-role role-designer">Website Designer</span>
-                        </div>
-                    </div>
-                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
-                    <div class="employee-stats">
-                        <div class="stat-item">
-                            <i class="fas fa-tasks stat-icon"></i>
-                            <div class="stat-value">10</div>
-                            <div class="stat-label">Tasks</div>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-star stat-icon"></i>
-                            <div class="stat-value">04</div>
-                            <div class="stat-label">Rating</div>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-project-diagram stat-icon"></i>
-                            <div class="stat-value">15</div>
-                            <div class="stat-label">Projects</div>
-                        </div>
-                    </div>
-                    <div class="employee-actions">
-                        <a href="profile.html"><button class="btn btn-primary">Profile</button></a>  
-                        <a href="#" ><button class="btn btn-secondary">Add Task </button></a>
-                    </div>
-                </div>
 
-                <div class="employee-card">
-                    <div class="employee-header">
-                        <img src="images/performer-2.jpg" alt="John Hardacre" class="employee-avatar">
-                        <div>
-                            <div class="employee-name">John Hardacre</div>
-                            <span class="employee-role role-developer">Developer</span>
-                        </div>
-                    </div>
-                    <p class="employee-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</p>
-                    <div class="employee-stats">
-                        <div class="stat-item">
-                            <i class="fas fa-tasks stat-icon"></i>
-                            <div class="stat-value">12</div>
-                            <div class="stat-label">Tasks</div>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-star stat-icon"></i>
-                            <div class="stat-value">03</div>
-                            <div class="stat-label">Rating</div>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-project-diagram stat-icon"></i>
-                            <div class="stat-value">25</div>
-                            <div class="stat-label">Projects</div>
-                        </div>
-                    </div>
                     <div class="employee-actions">
-                        <a href="profile.html"><button class="btn btn-primary">Profile</button></a>  
-                       <a href="#" ><button class="btn btn-secondary">Add Task </button></a>
+                        <a href="profile.html"> <button style="background-color: #6f42c1;"> Profile </button></a>
+                        <a href="#"> <button style="color: #6f42c1; border: 2px solid #6f42c1;"> Add Task </button> </a>
                     </div>
+
                 </div>
             </div>
 
-    </div>
+        </div>
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const sidebar = document.getElementById('sidebar');
-        const closeIcon = document.getElementById('closeIcon');
-        const body = document.body;
+        <script>
+            //Menu
+            const hamburger = document.getElementById('hamburger');
+            const sidebar = document.getElementById('sidebar');
+            const closeIcon = document.getElementById('closeIcon');
+            const body = document.body;
 
-        function showMenu() {
-            sidebar.classList.add('open');
-            body.classList.add('sidebar-open');
-            closeIcon.style.display = 'block';
-        }
+            function showMenu() {
+                sidebar.classList.add('open');
+                body.classList.add('sidebar-open');
+                closeIcon.style.display = 'block';
+            }
 
-        function hideMenu() {
-            sidebar.classList.remove('open');
-            body.classList.remove('sidebar-open');
-            closeIcon.style.display = 'none';
-        }
+            function hideMenu() {
+                sidebar.classList.remove('open');
+                body.classList.remove('sidebar-open');
+                closeIcon.style.display = 'none';
+            }
 
-        hamburger.addEventListener('click', showMenu);
-        closeIcon.addEventListener('click', hideMenu);
+            hamburger.addEventListener('click', showMenu);
+            closeIcon.addEventListener('click', hideMenu);
 
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('.has-submenu').forEach(menuItem => {
-                menuItem.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const submenu = menuItem.nextElementSibling;
-                    submenu.classList.toggle('show');
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelectorAll('.has-submenu').forEach(menuItem => {
+                    menuItem.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const submenu = menuItem.nextElementSibling;
+                        submenu.classList.toggle('show');
+                    });
                 });
             });
-        });
 
-        function toggleMenu() {
-    sidebar.classList.toggle('open');
-    body.classList.toggle('sidebar-open');
-    closeIcon.style.display = sidebar.classList.contains('open') ? 'block' : 'none';
-}
-    </script>
+            function toggleMenu() {
+                sidebar.classList.toggle('open');
+                body.classList.toggle('sidebar-open');
+                closeIcon.style.display = sidebar.classList.contains('open') ? 'block' : 'none';
+            }
+
+            // Profile icon
+            var profile_icon = document.querySelector(".profile-icon")
+            var profile_icon_option = document.querySelector(".profile-icon-option")
+            var display = 0
+
+            profile_icon.addEventListener("click", () => {
+                if (display == 1) {
+                    profile_icon_option.style.display = "block"
+                    display = 0;
+                }
+                else {
+                    profile_icon_option.style.display = "none"
+                    display = 1;
+                }
+            })
+
+        </script>
 </body>
+
 </html>
