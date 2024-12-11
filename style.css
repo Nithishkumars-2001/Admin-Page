@@ -25,6 +25,11 @@ body {
     top: 0;
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
+    overflow: scroll;
+}
+
+.sidebar::-webkit-scrollbar{
+    display: none;
 }
 
 .logo-section {
