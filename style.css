@@ -1018,8 +1018,8 @@ h1 {
     background-image: url(images/signin-img.png);
     background-color: #6f42c1;
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: contain;
 }
 
 .brand-name-show h1{
@@ -1120,7 +1120,6 @@ h1 {
     .brand-name-show{
         width: 100%;
         height: 80vh;
-        background-image: url(images/signin-img2.png);
     }
 
     .sign-in-container{
