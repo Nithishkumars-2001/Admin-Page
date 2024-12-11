@@ -610,28 +610,45 @@ h1 {
 
 .profile-icon-option {
     display: none;
+    width: 250px;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 10px 0 0 0;
     margin: 0 10px 10px 10px;
     right: 0;
     position: absolute;
     z-index: 10;
+    padding: 5px 10px;
 }
 
-.profile-icon-option i {
+.profile-show{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.profile-name-mail{
+    padding-left: 10px;
+}
+
+.profile-icon-option i{
     padding-right: 15px;
-    color: #6f42c1;
     font-size: 18px;
+    color: #6f42c1;
 }
 
-.profile-icon-option h5 {
+.profile-icon-option h5{
     display: flex;
     cursor: pointer;
     padding: 10px 25px;
 }
 
-.profile-icon-option h5:hover {
+.profile-icon-option h5 a{
+    text-decoration: none;
+    color: #323232;
+    font-weight: 600;
+}
+
+.profile-icon-option h5:hover{
     background-color: rgb(238, 245, 251);
 }
 
@@ -978,5 +995,184 @@ h1 {
     .client-profile img{
         width: 90px;
         height: 90px;
+    }
+}
+
+/*******************************   Sign in   ***********************************/
+
+.sign-in{
+    width: 100%;
+    display: flex;
+}
+
+.brand-name-show{
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: auto;
+    background-image: url(images/signin-img.png);
+    background-color: #6f42c1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.brand-name-show h1{
+    color: #fff;
+    font-size: 40px;
+    display: grid;
+    place-items: center;
+    padding-top: 20px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.sign-in-container{
+    width: 50%;
+    height: 100vh;
+    padding: 50px 80px;
+}
+
+.sign-in-container h1{
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+}
+
+.user-input input{
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    padding-left: 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.user-input input::placeholder{
+    padding-left: 20px;
+    color: gray;
+}
+
+.check-forget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.sign-btn{
+    display: grid;
+    place-items: center;
+    margin: 40px 0;
+}
+
+.sign-btn button{
+    width: 300px;
+    height: 40px;
+    border: none;
+    background-color: #6f42c1;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+}
+
+.sign-google-facebook{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-google-facebook button{
+    padding: 8px 30px;
+}
+
+.sign-google-facebook button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.sign-google-facebook button i{
+    padding-right: 10px;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.clik-register h4{
+    padding-top: 50px;
+    font-weight: 500;
+}
+
+.clik-register h4 a{
+    padding-left: 10px;
+    letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 768px){
+    .sign-in{
+        display: block;
+    }
+
+    .brand-name-show{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .sign-in-container{
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .sign-btn{
+        margin: 40px 0 20px 0;
+    }
+
+    .sign-google-facebook{
+        display: block;
+    }
+
+    .sign-google-facebook button{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .clik-register h4{
+        padding: 30px 0;
+    }
+}
+
+/*******************************   Register.html   ***********************************/
+
+.register-form{
+    width: 50%;
+    height: auto;
+    padding: 30px 50px;
+}
+
+.register-form h1{
+    display: grid;
+    place-items: center;
+}
+
+.register-btn{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #6f42c1;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.clik-sign h4{
+    padding: 20px 0;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px){
+    .register-form{
+        width: 100%;
+        padding: 30px 20px;
     }
 }
