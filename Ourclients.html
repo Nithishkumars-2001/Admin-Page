@@ -58,9 +58,9 @@
                 <a href="Department.html" class="submenu-item" onclick="toggleMenu()">Department</a>
                 <a href="salary.html" class="submenu-item" onclick="toggleMenu()">Salary</a>
             </div>
-            <a href="#" class="menu-item" onclick="toggleMenu()"><i class="fas fa-book"></i> <span>Accounts</span></a>
-            <a href="#" class="menu-item" onclick="toggleMenu()"><i class="fas fa-dollar-sign"></i>
-                <span>Payroll</span></a>
+            <a href="Sales.html" class="menu-item" onclick="toggleMenu()"> <i class="fa-solid fa-bullseye"></i> <span> Sales </span> </a>
+            <a href="Report.html" class="menu-item" onclick="toggleMenu()"> <i class="fa-solid fa-circle-nodes"></i> <span> Insights Report </span> </a>
+            <a href="Feedback.html" class="menu-item" onclick="toggleMenu()"> <i class="fa-solid fa-message"></i> <span> Feedback</span></a>
         </nav>
 
         <div class="bottom-icon">
@@ -319,61 +319,7 @@
     </div>
 
 
-    <script>
-        //Menu
-        const hamburger = document.getElementById('hamburger');
-        const sidebar = document.getElementById('sidebar');
-        const closeIcon = document.getElementById('closeIcon');
-        const body = document.body;
-
-        function showMenu() {
-            sidebar.classList.add('open');
-            body.classList.add('sidebar-open');
-            closeIcon.style.display = 'block';
-        }
-
-        function hideMenu() {
-            sidebar.classList.remove('open');
-            body.classList.remove('sidebar-open');
-            closeIcon.style.display = 'none';
-        }
-
-        hamburger.addEventListener('click', showMenu);
-        closeIcon.addEventListener('click', hideMenu);
-
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('.has-submenu').forEach(menuItem => {
-                menuItem.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const submenu = menuItem.nextElementSibling;
-                    submenu.classList.toggle('show');
-                });
-            });
-        });
-
-        function toggleMenu() {
-            sidebar.classList.toggle('open');
-            body.classList.toggle('sidebar-open');
-            closeIcon.style.display = sidebar.classList.contains('open') ? 'block' : 'none';
-        }
-
-        // Profile icon
-        var profile_icon = document.querySelector(".profile-icon")
-        var profile_icon_option = document.querySelector(".profile-icon-option")
-        var display = 0
-
-        profile_icon.addEventListener("click", () => {
-            if (display == 1) {
-                profile_icon_option.style.display = "block"
-                display = 0;
-            }
-            else {
-                profile_icon_option.style.display = "none"
-                display = 1;
-            }
-        })
-
-    </script>
+   <script src="script.js"> </script>
 </body>
 
 </html>
