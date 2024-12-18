@@ -1204,6 +1204,10 @@ h1 {
     color: rgb(172, 168, 168);
 }
 
+.sales-heading .count h2{
+    padding-top: 10px;
+}
+
 .sales-count {
     display: flex;
     justify-content: space-between;
